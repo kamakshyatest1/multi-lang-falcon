@@ -2,6 +2,7 @@ kind: AutomatedScanParameters
 spec: 
   languages:
     - java
+    - python
   additional_environment_variables:
     - ENDOR_LOG_VERBOSE=true
     - ENDOR_LOG_LEVEL=debug
