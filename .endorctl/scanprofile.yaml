@@ -1,0 +1,8 @@
+kind: AutomatedScanParameters
+spec: 
+  excluded_paths:
+    - src/python/**
+    - src/java/**
+  additional_environment_variables:
+    - ENDOR_LOG_VERBOSE=true
+    - ENDOR_LOG_LEVEL=debug
