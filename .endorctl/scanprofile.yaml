@@ -18,7 +18,7 @@ spec:
                 version:
                   name: "17.0.12"
                   urls:
-                    - "https://cdn.azul.com/zulu/bin/zulu17.52.17-ca-jdk17.0.12-linux_x64.tar.gz?_gl=1*18csrdj*_gcl_au*OTk0ODA5OTM0LjE3MjkxNDkzMDI.*_ga*MjA1NDU0MTA2My4xNzI5MTQ5MzAy*_ga_42DEGWGYD5*MTcyOTE0OTMwMi4xLjEuMTcyOTE0OTQ4NC4xOC4wLjA."
+                    - "https://cdn.azul.com/zulu/bin/zulu17.52.17-ca-jdk17.0.12-linux_x64.tar.gz"
                   relative_tool_chain_path: "zulu17.52.17-ca-jdk17.0.12-linux_x64"
                   sha256_sum: "24245c8d0ce4915d86e70b288b5de9b1b4c78f10adbb0e6ba93e2910039aad19"
                 maven_version:
