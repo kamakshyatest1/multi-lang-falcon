@@ -1,0 +1,43 @@
+kind: AutomatedScanParameters
+spec: 
+  languages:
+    - java
+  additional_environment_variables:
+    - ENDOR_LOG_VERBOSE=true
+    - ENDOR_LOG_LEVEL=debug
+
+---
+kind: ToolchainProfile
+spec:
+  os:
+    linux:
+        arch:
+          amd64:
+            java_tool_chain:
+                version:
+                  name: "17.0.12"
+                  urls:
+                    - "https://cdn.azul.com/zulu/bin/zulu17.52.17-ca-jdk17.0.12-linux_x64.tar.gz?_gl=1*18csrdj*_gcl_au*OTk0ODA5OTM0LjE3MjkxNDkzMDI.*_ga*MjA1NDU0MTA2My4xNzI5MTQ5MzAy*_ga_42DEGWGYD5*MTcyOTE0OTMwMi4xLjEuMTcyOTE0OTQ4NC4xOC4wLjA."
+                  relative_tool_chain_path: "zulu17.52.17-ca-jdk17.0.12-linux_x64"
+                  sha256_sum: "24245c8d0ce4915d86e70b288b5de9b1b4c78f10adbb0e6ba93e2910039aad19"
+                maven_version:
+                  name: "3.8.8"
+                  urls:
+                    - "https://dlcdn.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz"
+                  relative_tool_chain_path: "apache-maven-3.8.8"
+                  sha256_sum: "17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a"
+                gradle_version:
+                  name: "7.6.4"
+                  urls:
+                    - "https://services.gradle.org/distributions/gradle-7.6.4-bin.zip"
+                  relative_tool_chain_path: "gradle-7.6.4/"
+                  sha256_sum: "bed1da33cca0f557ab13691c77f38bb67388119e4794d113e051039b80af9bb1"
+            python_tool_chain:
+                version:
+                  name: "3.8.19"
+                  urls:
+                    - "https://github.com/indygreg/python-build-standalone/releases/download/20240726/cpython-3.8.19+20240726-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst"
+                  relative_tool_chain_path: "python"
+                  sha256_sum: "8675f055d1815dcbe5de94e7f4c84b0942ace527e4e1639b561f1672b517263f"
+
+---
