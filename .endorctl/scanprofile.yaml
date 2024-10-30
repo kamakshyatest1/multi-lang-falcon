@@ -40,5 +40,3 @@ spec:
                     - "https://github.com/indygreg/python-build-standalone/releases/download/20240726/cpython-3.8.19+20240726-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst"
                   relative_tool_chain_path: "python"
                   sha256_sum: "8675f055d1815dcbe5de94e7f4c84b0942ace527e4e1639b561f1672b517263f"
-
----
